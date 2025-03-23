@@ -32,6 +32,40 @@ This is a simple Tetris-like game implemented in Unity, created by following a t
 
 ---
 
+## **Setup Instructions**
+
+### **1. Clone the Repository**
+To get started, clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/Normie69K/game_tetris.git
+```
+
+### **2. Open the Project in Unity**
+1. Open **Unity Hub**.
+2. Click on **Add Project** and select the folder where you cloned the repository.
+3. Ensure you are using a compatible version of Unity (preferably **Unity 2021.3 or later**).
+
+### **3. Set Up the Game**
+1. Open the game scene (located in the `Scenes` folder).
+2. Ensure the `Board` and `Piece` GameObjects are set up correctly in the scene.
+3. Assign the `TetrominoData` ScriptableObjects to the `Tetrominoes` array in the `Board` script.
+
+### **4. Play the Game**
+1. Click the **Play** button in the Unity Editor.
+2. Use the controls to play the game.
+
+---
+
+## **Building the Game**
+To build the game for your desired platform:
+
+1. Go to **File > Build Settings**.
+2. Select your target platform (e.g., Windows, Mac, Linux, WebGL).
+3. Click **Build** and choose a location to save the build.
+
+---
+
 ## **Scripts**
 Here’s a brief overview of the main scripts used in the game:
 
@@ -50,62 +84,10 @@ Here’s a brief overview of the main scripts used in the game:
 
 ---
 
-## **Setup Instructions**
-1. **Create the Game Board**:
-   - Create a new Unity project.
-   - Add a `Tilemap` to the scene for the game board.
-   - Create an empty GameObject and name it `Board`.
-   - Attach the `Board` script to the `Board` GameObject.
-
-2. **Add the Piece**:
-   - Create a `Piece` GameObject and attach the `Piece` script to it.
-   - Make sure the `Piece` GameObject is a child of the `Board` GameObject.
-
-3. **Tetromino Data**:
-   - Create `TetrominoData` ScriptableObjects for each Tetromino shape (I, J, L, O, S, T, Z).
-   - Assign these ScriptableObjects to the `Tetrominoes` array in the `Board` script.
-
-4. **Controls**:
-   - The game uses the following keyboard inputs:
-     - **A**: Left
-     - **D**: Right
-     - **S**: Soft drop
-     - **Space**: Hard drop
-     - **Q**: Rotate counter-clockwise
-     - **E**: Rotate clockwise
-
----
-
-## **How to Run the Game**
-1. Open the Unity project.
-2. Open the game scene (ensure the `Board` and `Piece` GameObjects are set up correctly).
-3. Click the "Play" button in the Unity Editor to start the game.
-4. Use the controls to play the game.
-5. When the game ends, the board will be cleared, and the game will stop.
-
----
-
-## **Code Overview**
-
-### **Board.cs**
-- Manages the game board and piece spawning.
-- Handles line clearing and game over logic.
-
-### **Piece.cs**
-- Controls the active piece’s movement, rotation, and placement.
-
-### **Data.cs**
-- Contains Tetromino shapes and rotation matrices.
-
-### **Tetromino.cs**
-- Defines the Tetromino types and their data.
-
----
-
 ## **Credits**
 This game was created by following a tutorial from **Zigurous**. Special thanks to Zigurous for the excellent tutorial and resources. The assets and code structure are based on the tutorial.
 
-- **Tutorial Link**: [Zigurous Tetris Tutorial](https://youtu.be/ODLzYI4d-J8?si=OSpWgQu9oOie3Got)
+- **Tutorial Link**: [Zigurous Tetris Tutorial](https://youtu.be/ODLzYI4d-J8?si=1GdeocSfWfyNQ4md)
 
 ---
 
